@@ -3,7 +3,10 @@ import time
 
 def tree(branchLen,t,level):
     if branchLen > 5:
+        #Uncomment the below two lines to slow it down
+        #and print out levels.
         #print(level+"\n")
+        #time.sleep(1)
         t.forward(branchLen)
         t.right(20)
         tree(branchLen-15,t,"level 2")
